@@ -101,7 +101,7 @@ async function findRestaurants() {
 
     try {
         // Calculate viewport (2km around user location)
-        const viewDistance = 0.02; // roughly 2km in degrees
+        const viewDistance = 0.005; // roughly 500 meters
         const viewbox = `${userLocation.lon - viewDistance},${userLocation.lat + viewDistance},${userLocation.lon + viewDistance},${userLocation.lat - viewDistance}`;
         
         // Structured query for better results
